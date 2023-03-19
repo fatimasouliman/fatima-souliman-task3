@@ -215,6 +215,9 @@
     padding: 10px;
     color: #808080;
 }
+.book form p{
+    margin-top: 5px;
+}
 .book .submit{
     width: 150px;
     height: 40px;
