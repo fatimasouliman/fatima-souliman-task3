@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family:'Roboto', sans-serif;
 }
+/* nav br */
 .nav-bar{
     background-color:#e2e7f5e3 ;
     width: 100%;
@@ -43,6 +44,8 @@
     color: rgb(240, 240, 11);
     font-size: 20px;
 }
+/* nav br end */
+/* main seaction */
 .main{
     height: 100vh;
     background-image:url("../images/main.webp");
@@ -78,6 +81,7 @@
 .center .ar h1{
     font-weight: 300;
 }
+/* main seaction end */
 .dances ,.coaches , .about , .book{
     width: 100%;
     padding: 10px;
@@ -92,6 +96,7 @@
     font-size: 40px;
     font-weight: 900;
 }
+/* dances seaction */
 .dances-card{
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +131,8 @@
     height: 260px;
     border-radius: 5px;
 }
+/* dances seaction end */
+/* about seaction */
 .about{
     background-color: #d9edf545;
 }
@@ -135,6 +142,8 @@
 .about p{
     text-align: justify
 }
+/* about seaction end */
+/* coaches seaction */
 .coaches-cards{
     display: flex;
     justify-content: center;
@@ -189,7 +198,8 @@
     cursor: pointer;
     transform: scale(1.1);
 }
-
+/* coaches seaction end*/
+/* book seaction */
 .book{
     background-color: #d9edf545;
     padding: 20px;
@@ -218,6 +228,8 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+/* book seaction end*/
+/* footer seaction */
 footer{
     width: 100%;
     height: 50px;
@@ -236,6 +248,9 @@ footer div span{
     font-size: 20px;
     font-weight: 700
 }
+/* footer seaction */
+/*  */
+/* media */
 @media (max-width:992px){
     .nav-bar{
         flex-direction: column;
