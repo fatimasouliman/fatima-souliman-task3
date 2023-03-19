@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+.nav-bar{
+    background-color:#e2e7f5e3 ;
+    width: 100%;
+    position: fixed;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    z-index: 99;
+}
+.nav-bar .logo{
+    margin-left: 20px;
+    color: rgb(240, 240, 11);
+    
+}
+.nav-bar .logo span{
+    padding-left: 10px ;
+    font-weight: 300;
+    color: white;
+}
+.nav-bar .items{
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+.nav-bar .items a{
+    text-decoration: none;
+    color: white;
+}
+.nav-bar .items a:hover{
+    border-bottom: 2px solid rgb(240, 240, 11);
+}
+.nav-bar .items a span{
+    color: rgb(240, 240, 11);
+    font-size: 20px;
+}
+.main{
+    height: 100vh;
+    background-image:url("../images/main.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    font-size: 60px;
+    margin-bottom: 70px;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.068);
+    
+}
+.center .br{
+    margin-right: 20px;
+    color: rgb(240, 240, 11);
+    background-color: rgba(0, 0, 0, 0.473) ;
+}
+.center .br h1{
+    margin: 10px;
+}
+.center .ar h1{
+    font-weight: 300;
+}
+.dances ,.coaches , .about , .book{
+    width: 100%;
+    padding: 10px;
+}
+.dances .tittle , .coaches .tittle , .about h1 , .book h1{
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid gray;
+}
+.dances .tittle span , .coaches .tittle span , .about h1 span , .book h1 span{
+    color: rgb(240, 240, 11);
+    font-size: 40px;
+    font-weight: 900;
+}
+.dances-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.dances-card .card{
+    width: 40%;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.7s ease;
+}
+.dances-card .card span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.dances-card .card:hover span{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+}
+.dances-card .card img{
+    width: 100%;
+    height: 260px;
+    border-radius: 5px;
+}
+.about{
+    background-color: #d9edf545;
+}
+.about h1{
+    font-size: 20px;
+}
+.about p{
+    text-align: justify
+}
+.coaches-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.coaches-cards .card{
+    position: relative;
+    display: flex;
+    background-color:white;
+    width:40%;  
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.coaches-cards .card:hover{
+    box-shadow: 1px 0px 18px 16px #808080;
+}
+.coaches-cards .card .profile{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.coaches-cards .card .profile h1{
+    margin-bottom: 25px;
+}
+.coaches-cards .card img{
+    width:200px;
+    height:200px;
+    border-radius: 5px;
+    left: 0px;
+    top: 0px;
+}
+.coaches-cards .card p{
+    margin-top: 10px;
+    color: rgb(141, 137, 137);
+    text-align: start;
+}
+.coaches-cards .card .profile button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color:rgba(240, 240, 11, 0.37) ;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size:20px;
+    font-weight: 500;
+    box-shadow: 3px 2px 1px 1px gray;
+    transition: 0.7s ease;
+}
+.coaches-cards .card .profile button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.book{
+    background-color: #d9edf545;
+    padding: 20px;
+}
+.book form{
+    width: 80%;
+    margin: auto;
+}
+.book form input , textarea{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #808080;
+}
+.book .submit{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.7s ease;
+}
+.book .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(240, 240, 11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+footer div{
+    font-size: 10px;
+}
+footer div span{
+    color: white;
+    font-size: 20px;
+    font-weight: 700
+}
+@media (max-width:992px){
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        height: 90px;
+    }
+    .nav-bar .items{
+        gap: 10px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .center{
+        flex-direction: column;
+        font-size: 30px; 
+        margin-bottom: 30px;
+    }
+    .center .ar h1{
+    background-color: rgba(0, 0, 0, 0.473) ;
+}
+    .dances-card .card span{
+        width: 100%;
+    }
+    .about p{
+        text-align: left;
+    }
+    .coaches-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .coaches-cards .card{
+        width: 75%;
+        flex-direction: column;
+    }
+    .coaches-cards .card img{
+        width: 100%;
+        height: 50%;
+    }
+
+    
+}
